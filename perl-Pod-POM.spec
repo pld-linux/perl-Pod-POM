@@ -4,8 +4,8 @@
 Summary:	Pod::POM perl module
 Summary(pl):	Modu³ perla Pod::POM
 Name:		perl-Pod-POM
-Version:	0.13
-Release:	2
+Version:	0.15
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
