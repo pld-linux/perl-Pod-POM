@@ -32,6 +32,16 @@ manipulated.  In addition, Pod::POM supports and provides view objects
 which can automatically traverse the tree, or section thereof, and
 generate an output representation in one form or another.
 
+%description -l pl
+Ten modu³ jest implementacj± parsera konwertuj±cego dokumenty Pod na
+prost± postaæ modelu obiektowego, znan± jako Pod Object Model. Model
+obiektowy jest generowany jako hierarchiczne drzewo wêz³ów, z których
+ka¿dy reprezentuje inny element oryginalnego dokumentu. Po drzewie
+mo¿na siê przemieszczaæ rêcznie, sprawdzaj±c, wypisuj±c lub w inny
+sposób obrabiaj±c wêz³y. Oprócz tego, Pod::POM obs³uguje obiekty
+widoku, które mog± automatycznie przemieszczaæ siê po drzewie lub jego
+czê¶ci i generowaæ na wyj¶ciu reprezentacjê w jakiej¶ formie.
+
 %prep
 %setup -q -n Pod-POM-%{version}
 
