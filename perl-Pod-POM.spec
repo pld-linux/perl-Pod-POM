@@ -38,7 +38,7 @@ czê¶ci i generowaæ na wyj¶ciu reprezentacjê w jakiej¶ formie.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make}
 
 %install
