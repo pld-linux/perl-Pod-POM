@@ -1,11 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	Pod
 %define	pnam	POM
-%include	/usr/lib/rpm/macros.perl
 Summary:	Pod-POM perl module
 Summary(pl):	Modu³ perla Pod-POM
 Name:		perl-Pod-POM
 Version:	0.13
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -35,7 +35,7 @@ widoku, które mog± automatycznie przemieszczaæ siê po drzewie lub jego
 czê¶ci i generowaæ na wyj¶ciu reprezentacjê w jakiej¶ formie.
 
 %prep
-%setup -q -n Pod-POM-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
