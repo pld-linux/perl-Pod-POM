@@ -10,7 +10,8 @@ Summary(pl):	Modu³ perla Pod::POM
 Name:		perl-Pod-POM
 Version:	0.15
 Release:	2
-License:	GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	baa50e390cb1ae8b465c2eac05288f37
