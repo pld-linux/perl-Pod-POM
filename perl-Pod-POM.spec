@@ -9,7 +9,7 @@ Summary:	Pod::POM perl module
 Summary(pl):	Modu³ perla Pod::POM
 Name:		perl-Pod-POM
 Version:	0.15
-Release:	2
+Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
