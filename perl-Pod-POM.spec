@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Pod
 %define	pnam	POM
-Summary:	Pod-POM perl module
-Summary(pl):	Modu³ perla Pod-POM
+Summary:	Pod::POM perl module
+Summary(pl):	Modu³ perla Pod::POM
 Name:		perl-Pod-POM
 Version:	0.13
 Release:	2
