@@ -40,7 +40,7 @@ czê¶ci i generowaæ na wyj¶ciu reprezentacjê w jakiej¶ formie.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
