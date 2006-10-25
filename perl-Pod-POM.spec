@@ -8,13 +8,13 @@
 Summary:	Pod::POM perl module
 Summary(pl):	Modu³ perla Pod::POM
 Name:		perl-Pod-POM
-Version:	0.15
-Release:	3
+Version:	0.17
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	baa50e390cb1ae8b465c2eac05288f37
+# Source0-md5:	6ec8b345c9d43d45cc404c9416443d76
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
