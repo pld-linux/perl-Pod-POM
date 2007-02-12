@@ -6,7 +6,7 @@
 %define		pdir	Pod
 %define		pnam	POM
 Summary:	Pod::POM perl module
-Summary(pl):	Modu³ perla Pod::POM
+Summary(pl.UTF-8):   ModuÅ‚ perla Pod::POM
 Name:		perl-Pod-POM
 Version:	0.17
 Release:	1
@@ -30,15 +30,15 @@ manipulated.  In addition, Pod::POM supports and provides view objects
 which can automatically traverse the tree, or section thereof, and
 generate an output representation in one form or another.
 
-%description -l pl
-Ten modu³ jest implementacj± parsera konwertuj±cego dokumenty Pod na
-prost± postaæ modelu obiektowego, znan± jako Pod Object Model. Model
-obiektowy jest generowany jako hierarchiczne drzewo wêz³ów, z których
-ka¿dy reprezentuje inny element oryginalnego dokumentu. Po drzewie
-mo¿na siê przemieszczaæ rêcznie, sprawdzaj±c, wypisuj±c lub w inny
-sposób obrabiaj±c wêz³y. Oprócz tego, Pod::POM obs³uguje obiekty
-widoku, które mog± automatycznie przemieszczaæ siê po drzewie lub jego
-czê¶ci i generowaæ na wyj¶ciu reprezentacjê w jakiej¶ formie.
+%description -l pl.UTF-8
+Ten moduÅ‚ jest implementacjÄ… parsera konwertujÄ…cego dokumenty Pod na
+prostÄ… postaÄ‡ modelu obiektowego, znanÄ… jako Pod Object Model. Model
+obiektowy jest generowany jako hierarchiczne drzewo wÄ™zÅ‚Ã³w, z ktÃ³rych
+kaÅ¼dy reprezentuje inny element oryginalnego dokumentu. Po drzewie
+moÅ¼na siÄ™ przemieszczaÄ‡ rÄ™cznie, sprawdzajÄ…c, wypisujÄ…c lub w inny
+sposÃ³b obrabiajÄ…c wÄ™zÅ‚y. OprÃ³cz tego, Pod::POM obsÅ‚uguje obiekty
+widoku, ktÃ³re mogÄ… automatycznie przemieszczaÄ‡ siÄ™ po drzewie lub jego
+czÄ™Å›ci i generowaÄ‡ na wyjÅ›ciu reprezentacjÄ™ w jakiejÅ› formie.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
