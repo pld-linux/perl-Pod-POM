@@ -6,7 +6,7 @@
 %define		pdir	Pod
 %define		pnam	POM
 Summary:	Pod::POM perl module
-Summary(pl.UTF-8):   Moduł perla Pod::POM
+Summary(pl.UTF-8):	Moduł perla Pod::POM
 Name:		perl-Pod-POM
 Version:	0.17
 Release:	1
