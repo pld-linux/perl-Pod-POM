@@ -5,16 +5,17 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Pod
 %define		pnam	POM
-Summary:	Pod::POM perl module
-Summary(pl.UTF-8):	Moduł perla Pod::POM
+Summary:	Pod::POM - POD Object Model
+Summary(pl.UTF-8):	Pod::POM - Obiektowy model POD (POD Object Model)
 Name:		perl-Pod-POM
-Version:	0.25
+Version:	0.27
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	02f62bc9115a4931aa316ba16d65d013
+Source0:	http://www.cpan.org/modules/by-module/Pod/ANDREWF/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	8cff81ea5d86cf4b0377f655ce759bdd
+URL:		http://search.cpan.org/dist/Pod-POM/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
@@ -62,7 +63,12 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README TODO
-%attr(755,root,root) %{_bindir}/*
+%attr(755,root,root) %{_bindir}/podlint
+%attr(755,root,root) %{_bindir}/pom2
+%attr(755,root,root) %{_bindir}/pomdump
 %{perl_vendorlib}/Pod/POM.pm
 %{perl_vendorlib}/Pod/POM
-%{_mandir}/man[13]/*
+%{_mandir}/man1/podlint.1p*
+%{_mandir}/man1/pom2.1p*
+%{_mandir}/man1/pomdump.1p*
+%{_mandir}/man3/Pod::POM*.3pm*
