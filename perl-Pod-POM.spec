@@ -8,15 +8,20 @@
 Summary:	Pod::POM - POD Object Model
 Summary(pl.UTF-8):	Pod::POM - Obiektowy model POD (POD Object Model)
 Name:		perl-Pod-POM
-Version:	0.27
+Version:	2.01
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/Pod/ANDREWF/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	8cff81ea5d86cf4b0377f655ce759bdd
+Source0:	http://www.cpan.org/modules/by-module/Pod/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	a2983236abdcf7842d93f10f9132e46c
 URL:		http://search.cpan.org/dist/Pod-POM/
 BuildRequires:	perl-devel >= 1:5.8.0
+%if %{with tests}
+BuildRequires:	perl-File-Slurper >= 0.004
+BuildRequires:	perl-Test-Differences
+BuildRequires:	perl-Text-Diff
+%endif
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -62,7 +67,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc Changes README TODO
+%doc Changes README.md TODO
 %attr(755,root,root) %{_bindir}/podlint
 %attr(755,root,root) %{_bindir}/pom2
 %attr(755,root,root) %{_bindir}/pomdump
